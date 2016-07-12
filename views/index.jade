@@ -1,0 +1,12 @@
+//- views/index.jade
+html
+	head
+		title
+	body
+		form(method="post",enctype="multipart/form-data",action="/")
+			p
+				input(type="text",name="receiver",placeholder="receiver")
+			p
+				input(type="file",name="filename")
+			p
+				input(type="submit")

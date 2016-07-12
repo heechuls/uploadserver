@@ -1,0 +1,17 @@
+html
+	head
+		title
+	body
+		a(href=imgsrc download="nike.jpg" style="font-size:20px")
+			img(id="image" src=imgsrc style="width:100%")
+			script.
+				var element = document.getElementById("image");
+				element.addEventListener("touchend",function(){
+					var imgsrc = document.getElementById("image").src
+					console.log(imgsrc);
+					var link = document.createElement('a');
+					link.href = imgsrc;
+					link.download = 'nike.jpg';
+					document.body.appendChild(link);
+					link.click();
+				})

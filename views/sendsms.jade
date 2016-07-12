@@ -1,0 +1,14 @@
+//- views/index.jade
+html
+	head
+		title
+	body
+		form(method="post",action="/sendsms")
+			p
+				input(type="text",name="receiver",placeholder="receiver")
+			p
+				input(type="text",name="url",placeholder="url")
+			p
+				input(type="text",name="key",placeholder="key")
+			p
+				input(type="submit")
